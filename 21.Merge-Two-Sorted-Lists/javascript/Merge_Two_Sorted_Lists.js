@@ -24,6 +24,7 @@ var mergeTwoLists = function (list1, list2) {
       list2 = list2.next
     }
   }
+  //26.Remove_Duplicates_from_Sorted_Array
 
   if (list1 !== null || list2 !== null)
     tail.next = list1 !== null ? list1 : list2
