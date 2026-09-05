@@ -1,5 +1,6 @@
-1.two-sum/java/*.class
-2.Palindrome-Number/java/*.class
-14.Long_Common_Prefix/java/*.class
-20.Valid_Parentheses/java/*.class
-26.Remove_Duplicates_from_Sorted_Array/java/*.class
+Easy/1.two-sum/java/*.class
+Easy/2.Palindrome-Number/java/*.class
+Easy/14.Long_Common_Prefix/java/*.class
+Easy/20.Valid-Parentheses/java/*.class
+Easy/26.Remove_Duplicates_from_Sorted_Array/java/*.class
+.vscode/
