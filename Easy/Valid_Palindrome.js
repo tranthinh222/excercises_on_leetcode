@@ -2,27 +2,45 @@
  * @param {string} s
  * @return {boolean}
  */
+
+// Approach 1: Two pointers
+// var isPalindrome = function (s) {
+//   const str = s.toLowerCase()
+//   let cleanString = ''
+//   for (const c of str) {
+//     if (
+//       (c <= 'z' && c >= 'a') ||
+//       (c <= 'Z' && c >= 'A') ||
+//       (c <= '9' && c >= '0')
+//     ) {
+//       cleanString += c
+//     }
+//   }
+//   let l = 0,
+//     r = cleanString.length - 1
+//   while (l < r) {
+//     if (cleanString[l] !== cleanString[r]) return false
+//     l++
+//     r--
+//   }
+
+//   return true
+// }
+
+// Approach 2: reverse string
 var isPalindrome = function (s) {
-  const str = s.toLowerCase()
-  let cleanString = ''
-  for (const c of str) {
+  let newStr = ''
+  for (const c of s) {
     if (
-      (c <= 'z' && c >= 'a') ||
-      (c <= 'Z' && c >= 'A') ||
-      (c <= '9' && c >= '0')
+      (c >= 'a' && c <= 'z') ||
+      (c >= 'A' && c <= 'Z') ||
+      (c >= '0' && c <= '9')
     ) {
-      cleanString += c
+      newStr += c
     }
   }
-  let l = 0,
-    r = cleanString.length - 1
-  while (l < r) {
-    if (cleanString[l] !== cleanString[r]) return false
-    l++
-    r--
-  }
 
-  return true
+  return newStr === newStr.split('').reverse().join('')
 }
 
-console.log(isPalindrome('Was it a car or a cat I saw?'))
+console.log(isPalindrome(':::'))
